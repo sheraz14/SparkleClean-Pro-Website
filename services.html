@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - SparkleClean Pro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/process.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/dust-drifters-logo.png" alt="Dust Drifters">
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="nav-link active">Services</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-grid">
+                                <a href="residential.html" class="dropdown-item">
+                                    <i class="icon-home"></i>
+                                    <h3>Residential Cleaning</h3>
+                                    <p>Professional home cleaning services</p>
+                                </a>
+                                <a href="commercial.html" class="dropdown-item">
+                                    <i class="icon-building"></i>
+                                    <h3>Commercial Cleaning</h3>
+                                    <p>Comprehensive solutions for businesses and offices</p>
+                                </a>
+                                <a href="specialized.html" class="dropdown-item">
+                                    <i class="icon-star"></i>
+                                    <h3>Specialized Services</h3>
+                                    <p>Deep cleaning and specific cleaning requirements</p>
+                                </a>
+                                <div class="dropdown-item coming-soon">
+                                    <i class="icon-brush"></i>
+                                    <h3>Carpet Cleaning</h3>
+                                    <p>Professional carpet and upholstery cleaning</p>
+                                    <span class="dropdown-coming-soon">Coming Soon</span>
+                                </div>
+                                <a href="window.html" class="dropdown-item">
+                                    <i class="icon-window"></i>
+                                    <h3>Window Cleaning</h3>
+                                    <p>Crystal clear results for all types of windows</p>
+                                </a>
+                                <div class="dropdown-item coming-soon">
+                                    <i class="icon-leaf"></i>
+                                    <h3>Green Cleaning</h3>
+                                    <p>Eco-friendly cleaning solutions and products</p>
+                                    <span class="dropdown-coming-soon">Coming Soon</span>
+                                </div>
+                                <a href="services.html" class="view-all">
+                                    <span>View All Services</span>
+                                    <i class="icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="careers.html" class="nav-link">Careers</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contact and CTA -->
+            <div class="header-actions">
+                <a href="tel:1234567890" class="phone-number">
+                    <i class="icon-phone"></i>
+                    <span>(123) 456-7890</span>
+                </a>
+                <a href="book.html" class="cta-button">Book Now</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-container">
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="mobile-dropdown">
+                            <div class="mobile-dropdown-header">
+                                <a href="services.html" class="mobile-link">Services</a>
+                                <button class="mobile-dropdown-toggle" aria-label="Toggle Services Menu">
+                                <i class="icon-chevron"></i>
+                            </button>
+                            </div>
+                            <ul class="mobile-dropdown-menu">
+                                <li><a href="residential.html">Residential Cleaning</a></li>
+                                <li><a href="commercial.html">Commercial Cleaning</a></li>
+                                <li><a href="specialized.html">Specialized Services</a></li>
+                                <li class="coming-soon"><a>Carpet Cleaning</a></li>
+                                <li><a href="window.html">Window Cleaning</a></li>
+                                <li class="coming-soon"><a>Green Cleaning</a></li>
+                                <li>
+                                    <a href="services.html" class="view-all-mobile">
+                                        <span>View All Services</span>
+                                        <i class="icon-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact">
+                    <a href="tel:1234567890" class="mobile-phone">
+                        <i class="icon-phone"></i>
+                        <span>(123) 456-7890</span>
+                    </a>
+                    <div class="mobile-social">
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="pattern-overlay"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Services</li>
+                </ol>
+            </nav>
+            <div class="services-hero-content">
+                <h1>Our Services</h1>
+                <div class="decorative-line">
+                    <span></span>
+                    <i class="icon-sparkle"></i>
+                    <span></span>
+                </div>
+                <p>Professional cleaning solutions tailored to your needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Residential Cleaning -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="icon-home"></i>
+                    </div>
+                    <h3>Residential Cleaning</h3>
+                    <p>Comprehensive home cleaning services customized to your specific needs and schedule.</p>
+                    <ul class="service-features">
+                        <li>Deep cleaning</li>
+                        <li>Regular maintenance</li>
+                        <li>Move-in/out cleaning</li>
+                        <li>Window cleaning</li>
+                    </ul>
+                    <a href="residential.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Commercial Cleaning -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="icon-building"></i>
+                    </div>
+                    <h3>Commercial Cleaning</h3>
+                    <p>Professional cleaning solutions for offices, retail spaces, and commercial properties.</p>
+                    <ul class="service-features">
+                        <li>Office cleaning</li>
+                        <li>Retail spaces</li>
+                        <li>Medical facilities</li>
+                        <li>Industrial cleaning</li>
+                    </ul>
+                    <a href="commercial.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Specialized Services -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="icon-star"></i>
+                    </div>
+                    <h3>Specialized Cleaning</h3>
+                    <p>Expert solutions for specific cleaning requirements and challenging situations.</p>
+                    <ul class="service-features">
+                        <li>Carpet cleaning</li>
+                        <li>Upholstery cleaning</li>
+                        <li>Post-construction</li>
+                        <li>Event cleanup</li>
+                    </ul>
+                    <a href="specialized.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Window Cleaning -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="icon-window"></i>
+                    </div>
+                    <h3>Window Cleaning</h3>
+                    <p>Professional window cleaning services for crystal clear results.</p>
+                    <ul class="service-features">
+                        <li>Interior & exterior windows</li>
+                        <li>High-rise buildings</li>
+                        <li>Screen cleaning</li>
+                        <li>Track & frame cleaning</li>
+                    </ul>
+                    <a href="window.html" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Carpet Cleaning -->
+                <div class="service-card coming-soon" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="icon-brush"></i>
+                    </div>
+                    <h3>Carpet Cleaning</h3>
+                    <p>Deep carpet and upholstery cleaning for a fresh, renewed look.</p>
+                    <ul class="service-features">
+                        <li>Deep steam cleaning</li>
+                        <li>Stain removal</li>
+                        <li>Deodorizing</li>
+                        <li>Pet stain treatment</li>
+                    </ul>
+                    <span class="coming-soon-badge">Stay Tuned</span>
+                </div>
+
+                <!-- Green Cleaning -->
+                <div class="service-card coming-soon" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="icon-leaf"></i>
+                    </div>
+                    <h3>Green Cleaning</h3>
+                    <p>Eco-friendly cleaning solutions for a healthier environment.</p>
+                    <ul class="service-features">
+                        <li>Non-toxic products</li>
+                        <li>Sustainable methods</li>
+                        <li>Allergen-free cleaning</li>
+                        <li>Energy-efficient practices</li>
+                    </ul>
+                    <span class="coming-soon-badge">Stay Tuned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Guarantees Section -->
+    <section class="guarantees-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Our Guarantees</h2>
+            <div class="guarantees-grid">
+                <!-- Satisfaction Guarantee -->
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <i class="icon-shield-check"></i>
+                    </div>
+                    <h3>100% Satisfaction Guarantee</h3>
+                    <p>If you're not completely satisfied with our service, we'll make it right or refund your money.</p>
+                    <div class="guarantee-hover">
+                        <ul>
+                            <li>No questions asked refund policy</li>
+                            <li>Free service touch-ups</li>
+                            <li>Dedicated customer support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Safety Protocols -->
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <i class="icon-lock"></i>
+                    </div>
+                    <h3>Safety First Approach</h3>
+                    <p>Rigorous safety protocols and background-checked professionals for your peace of mind.</p>
+                    <div class="guarantee-hover">
+                        <ul>
+                            <li>Background verified staff</li>
+                            <li>COVID-safe protocols</li>
+                            <li>Regular safety training</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Environmental Commitment -->
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <i class="icon-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly Promise</h3>
+                    <p>Committed to using environmentally responsible cleaning products and sustainable practices.</p>
+                    <div class="guarantee-hover">
+                        <ul>
+                            <li>Green-certified products</li>
+                            <li>Water conservation</li>
+                            <li>Minimal waste policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Our Process</h2>
+            
+            <div class="process-flow">
+                <!-- Book Estimate Card -->
+                <div class="process-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <i class="icon-calendar"></i>
+                                <p class="card-description">
+                                    Getting a sparkling clean space is just a click away! Schedule online or call us.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="front-content">
+                                <i class="process-icon icon-calendar"></i>
+                                <h3 class="front-title">Book Your Free Estimate</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-connector">
+                    <div class="dotted-line"></div>
+                    <i class="icon-paper-plane"></i>
+                </div>
+
+                <!-- Get Confirmation Card -->
+                <div class="process-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <i class="icon-envelope"></i>
+                                <p class="card-description">
+                                    We'll confirm your booking and ensure everything is set for your cleaning.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="front-content">
+                                <i class="process-icon icon-envelope"></i>
+                                <h3 class="front-title">Get Confirmation</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-connector">
+                    <div class="dotted-line"></div>
+                    <i class="icon-paper-plane"></i>
+                </div>
+
+                <!-- Relax Card -->
+                <div class="process-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <i class="icon-smile"></i>
+                                <p class="card-description">
+                                    Our professional team will handle everything while you relax.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="front-content">
+                                <i class="process-icon icon-smile"></i>
+                                <h3 class="front-title">Sit Back and Relax</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" data-aos="fade-up">
+        <div class="container">
+            <div class="faq-wrapper">
+                <!-- FAQ Side -->
+                <div class="faq-side">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    
+                    <!-- FAQ Search and Filters -->
+                    <div class="faq-controls">
+                        <div class="faq-search">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search questions..." id="faqSearch">
+                        </div>
+                        <div class="faq-filters">
+                            <button class="filter-btn active" data-category="all">All</button>
+                            <button class="filter-btn" data-category="services">Services</button>
+                            <button class="filter-btn" data-category="pricing">Pricing</button>
+                            <button class="filter-btn" data-category="booking">Booking</button>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion">
+                        <div class="faq-item" data-category="services">
+                            <div class="faq-question">
+                                <h3>What cleaning services do you offer?</h3>
+                                <i class="icon-chevron"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer a comprehensive range of cleaning services including residential cleaning, commercial cleaning, specialized cleaning, and window cleaning. Our services can be customized to meet your specific needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="pricing">
+                            <div class="faq-question">
+                                <h3>How do you determine the pricing?</h3>
+                                <i class="icon-chevron"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our pricing is based on several factors including the size of the space, type of cleaning required, frequency of service, and specific requirements. We provide free estimates to ensure transparent pricing.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="booking">
+                            <div class="faq-question">
+                                <h3>How do I schedule a cleaning service?</h3>
+                                <i class="icon-chevron"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can schedule a cleaning service through our website, by phone, or email. We'll confirm your booking and ensure everything is set for your cleaning appointment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ask Question Side -->
+                <div class="ask-question-side">
+                    <h2 class="section-title">Ask a Question</h2>
+                    <form class="question-form" id="questionForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="question">Your Question</label>
+                            <textarea id="question" name="question" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-question-btn">
+                            <i class="icon-send"></i>
+                            Submit Question
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section" data-aos="fade-up">
+        <div class="container">
+            <div class="quote-content">
+                <h2>Get Your Free Quote Now</h2>
+                <p>Experience the difference of professional cleaning services</p>
+                <div class="quote-actions">
+                    <a href="/quote" class="btn btn-primary">
+                        <span>Get a Quote</span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <span class="quote-divider">or</span>
+                    <a href="tel:1234567890" class="btn btn-secondary">
+                        <i class="icon-phone"></i>
+                        <span>Call (123) 456-7890</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Company Info Column -->
+            <div class="footer-column company-info">
+                <img src="images/dust-drifters-logo.png" alt="Dust Drifters" class="footer-logo">
+                <p class="company-desc">Professional cleaning services delivering exceptional results with eco-friendly solutions. Trusted by homeowners and businesses since 2010.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                </div>
+                <div class="certifications">
+                    <img src="cert1.png" alt="Green Certified">
+                    <img src="cert2.png" alt="Professional Association">
+                    <img src="cert3.png" alt="BBB Accredited">
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column contact-info">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <i class="icon-location"></i>
+                        <div>
+                            <p>123 Cleaning Street</p>
+                            <p>City, State 12345</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon-phone"></i>
+                        <a href="tel:1234567890">(123) 456-7890</a>
+                    </li>
+                    <li>
+                        <i class="icon-email"></i>
+                        <a href="mailto:info@sparkleclean.pro">info@sparkleclean.pro</a>
+                    </li>
+                    <li>
+                        <i class="icon-clock"></i>
+                        <div>
+                            <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                            <p>Sat: 9:00 AM - 4:00 PM</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="payment-methods">
+                    <img src="visa.svg" alt="Visa">
+                    <img src="mastercard.svg" alt="Mastercard">
+                    <img src="amex.svg" alt="American Express">
+                    <img src="paypal.svg" alt="PayPal">
+                </div>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div class="footer-column newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for cleaning tips and exclusive offers!</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="gdpr-consent" required>
+                        <label for="gdpr-consent">
+                            I agree to receive marketing emails and accept the 
+                            <a href="privacy.html">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <div class="form-messages">
+                        <div class="success-message">
+                            <i class="icon-check"></i>
+                            <span>Thank you for subscribing!</span>
+                        </div>
+                        <div class="error-message">
+                            <i class="icon-alert"></i>
+                            <span>Oops! Something went wrong.</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="service-area">
+                    <h4>Service Area</h4>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=..."
+                            width="100%" 
+                            height="150" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    © 2024 SparkleClean Pro. All rights reserved.
+                </div>
+                <div class="bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sitemap.html">Site Map</a>
+                </div>
+                <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                    <i class="icon-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html> 

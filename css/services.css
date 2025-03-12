@@ -1,0 +1,729 @@
+/* Services Hero Section */
+.services-hero {
+    position: relative;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    overflow: hidden;
+}
+
+.pattern-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.1) 2px,
+        transparent 2px
+    );
+    background-size: 30px 30px;
+    animation: patternMove 20s linear infinite;
+}
+
+@keyframes patternMove {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(-30px) translateY(-30px);
+    }
+}
+
+.services-hero-content {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.decorative-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.decorative-line span {
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.decorative-line i {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    margin-bottom: 40px;
+}
+
+.breadcrumb ol {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '→';
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    opacity: 0.8;
+}
+
+/* Services Grid */
+.services-grid-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 520px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: #3498db;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-icon i {
+    font-size: 24px;
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+    min-height: 50px;
+    margin: 0 0 15px 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.service-card p {
+    color: #6c757d;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    height: 4.8em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-features li {
+    padding: 8px 0;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-features li::before {
+    content: '✓';
+    color: #3498db;
+    font-weight: bold;
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    gap: 8px;
+    margin-top: auto;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-link i {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.service-link:hover i {
+    transform: translateX(5px);
+}
+
+.service-link:hover {
+    color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-hero {
+        padding: 60px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+}
+
+/* Coming Soon Card Styles */
+.service-card.coming-soon {
+    position: relative;
+    overflow: hidden;
+    background: #fff5f5;
+    border: 2px dashed #f8d7da;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add Coming Soon Ribbon */
+.service-card.coming-soon::after {
+    content: 'Coming Soon';
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: #dc3545;
+    color: white;
+    padding: 8px 40px;
+    transform: rotate(45deg);
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 4;
+}
+
+.service-card.coming-soon:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        rgba(220, 53, 69, 0.85),
+        rgba(248, 215, 218, 0.9)
+    );
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.service-card.coming-soon:hover::before {
+    opacity: 1;
+}
+
+.service-card.coming-soon .coming-soon-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background: white;
+    color: #dc3545;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.15);
+    opacity: 0;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    margin-top: auto;
+}
+
+.service-card.coming-soon:hover .coming-soon-badge {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Make the content slightly muted */
+.service-card.coming-soon .service-icon,
+.service-card.coming-soon h3,
+.service-card.coming-soon p,
+.service-card.coming-soon .service-features {
+    opacity: 0.7;
+    position: relative;
+}
+
+/* Ensure the ribbon stays on top */
+.service-card.coming-soon::after {
+    z-index: 4;
+}
+
+/* Dropdown Coming Soon Styles */
+.dropdown-item.coming-soon {
+    position: relative;
+    background: #fff5f5;
+    border: 1px dashed #f8d7da;
+    cursor: default;
+    opacity: 0.8;
+}
+
+.dropdown-item.coming-soon:hover {
+    transform: none;
+    border-color: #f8d7da;
+    box-shadow: none;
+}
+
+.dropdown-coming-soon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #dc3545;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dropdown-item.coming-soon i {
+    color: #dc3545;
+}
+
+/* Update mobile menu as well */
+.mobile-dropdown-menu li.coming-soon {
+    position: relative;
+    opacity: 0.7;
+}
+
+.mobile-dropdown-menu li.coming-soon a {
+    pointer-events: none;
+    color: #dc3545;
+}
+
+.mobile-dropdown-menu li.coming-soon::after {
+    content: 'Coming Soon';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7rem;
+    background: #dc3545;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+/* Quote Section */
+.quote-section {
+    padding: 80px 0;
+    background: linear-gradient(45deg, #1a237e, #1e88e5);
+    color: white;
+    text-align: center;
+}
+
+.quote-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.quote-content p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.quote-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.quote-divider {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #ff9966;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #ff5e62;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .quote-actions {
+        flex-direction: column;
+    }
+
+    .quote-divider {
+        display: none;
+    }
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a1a1a, #000000);
+}
+
+.faq-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* FAQ Side */
+.faq-side {
+    padding: 30px;
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 153, 102, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.faq-side .section-title {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.faq-search {
+    margin-bottom: 20px;
+}
+
+.faq-search input {
+    width: 100%;
+    padding: 15px 20px;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.faq-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #ff9966;
+    border-color: #ff9966;
+}
+
+/* FAQ Items */
+.faq-item {
+    background: rgba(40, 40, 40, 0.6);
+    border: 1px solid rgba(255, 153, 102, 0.05);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.faq-answer {
+    color: #ccc;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 20px 20px;
+    max-height: 1000px;
+}
+
+/* Ask Question Side */
+.ask-question-side {
+    padding: 30px;
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 153, 102, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.ask-question-side .section-title {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(40, 40, 40, 0.6);
+    border: 1px solid rgba(255, 153, 102, 0.1);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff9966;
+    outline: none;
+}
+
+.submit-question-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ff9966;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-question-btn:hover {
+    background: #ff5e62;
+}
+
+@media (max-width: 768px) {
+    .faq-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Service Guarantees Section */
+.guarantees-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+}
+
+.guarantees-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.guarantee-card {
+    position: relative;
+    background: #151515;
+    border: 1px solid rgba(255, 153, 102, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.guarantee-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guarantee-icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.guarantee-card h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.guarantee-card p {
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.guarantee-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 153, 102, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.guarantee-hover ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.guarantee-hover li {
+    color: white;
+    padding: 10px 0;
+    font-weight: 500;
+    position: relative;
+    padding-left: 25px;
+}
+
+.guarantee-hover li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: white;
+}
+
+.guarantee-card:hover .guarantee-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.guarantee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 153, 102, 0.2);
+}
+
+@media (max-width: 992px) {
+    .guarantees-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .guarantees-grid {
+        grid-template-columns: 1fr;
+    }
+}

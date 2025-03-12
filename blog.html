@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SparkleClean Pro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/interactive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <button class="fab" onclick="showToast('Opening quote form...', 'info')">
+        <i class="icon-quote"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="SparkleClean Pro">
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="nav-link">Services</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-grid">
+                                <a href="residential.html" class="dropdown-item">
+                                    <i class="icon-home"></i>
+                                    <h3>Residential Cleaning</h3>
+                                    <p>Professional home cleaning services</p>
+                                </a>
+                                <a href="commercial.html" class="dropdown-item">
+                                    <i class="icon-building"></i>
+                                    <h3>Commercial Cleaning</h3>
+                                    <p>Comprehensive solutions for businesses and offices</p>
+                                </a>
+                                <a href="specialized.html" class="dropdown-item">
+                                    <i class="icon-star"></i>
+                                    <h3>Specialized Services</h3>
+                                    <p>Deep cleaning and specific cleaning requirements</p>
+                                </a>
+                                <a href="checklist.html" class="dropdown-item">
+                                    <i class="icon-checklist"></i>
+                                    <h3>Our Complete Cleaning Checklist</h3>
+                                    <p>Comprehensive checklist for all cleaning tasks</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="careers.html" class="nav-link">Careers</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contact and CTA -->
+            <div class="header-actions">
+                <a href="tel:1234567890" class="phone-number">
+                    <i class="icon-phone"></i>
+                    <span>(123) 456-7890</span>
+                </a>
+                <a href="/book" class="cta-button">Book Now</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-container">
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="mobile-dropdown">
+                            <div class="mobile-dropdown-header">
+                                <a href="services.html" class="mobile-link">Services</a>
+                                <button class="mobile-dropdown-toggle" aria-label="Toggle Services Menu">
+                                    <i class="icon-chevron"></i>
+                                </button>
+                            </div>
+                            <ul class="mobile-dropdown-menu">
+                                <li><a href="residential.html">Residential Cleaning</a></li>
+                                <li><a href="commercial.html">Commercial Cleaning</a></li>
+                                <li><a href="specialized.html">Specialized Services</a></li>
+                                <li class="coming-soon"><a>Carpet Cleaning</a></li>
+                                <li><a href="window.html">Window Cleaning</a></li>
+                                <li class="coming-soon"><a>Green Cleaning</a></li>
+                                <li>
+                                    <a href="services.html" class="view-all-mobile">
+                                        <span>View All Services</span>
+                                        <i class="icon-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact">
+                    <a href="tel:1234567890" class="mobile-phone">
+                        <i class="icon-phone"></i>
+                        <span>(123) 456-7890</span>
+                    </a>
+                    <div class="mobile-social">
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="featured-posts-slider">
+            <div class="featured-post">
+                <div class="featured-image">
+                    <img src="images/blog/featured-1.jpg" alt="Featured Post">
+                    <span class="category">Cleaning Tips</span>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="date">March 15, 2024</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                    <h2>10 Professional House Cleaning Secrets Revealed</h2>
+                    <p>Learn the insider techniques professional cleaners use to make homes sparkle in half the time...</p>
+                    <div class="author-info">
+                        <img src="images/team/author-1.jpg" alt="Author" class="author-avatar">
+                        <span class="author-name">Sarah Johnson</span>
+                    </div>
+                    <a href="post.html" class="read-more">Read Article <i class="icon-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Blog Content -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Posts Grid -->
+                <div class="posts-grid">
+                    <!-- Blog Post Card -->
+                    <article class="post-card">
+                        <div class="post-image">
+                            <img src="images/blog/post-1.jpg" alt="Blog Post">
+                            <span class="category">Home Care</span>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="date">March 12, 2024</span>
+                                <span class="read-time">3 min read</span>
+                            </div>
+                            <h3>Spring Cleaning Checklist: Room by Room Guide</h3>
+                            <p>Get your home ready for spring with our comprehensive cleaning guide...</p>
+                            <div class="post-footer">
+                                <div class="author">
+                                    <img src="images/team/author-2.jpg" alt="Author">
+                                    <span>Mike Smith</span>
+                                </div>
+                                <div class="share-buttons">
+                                    <button aria-label="Share on Facebook"><i class="icon-facebook"></i></button>
+                                    <button aria-label="Share on Twitter"><i class="icon-twitter"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- More post cards... -->
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget search-widget">
+                        <form class="search-form">
+                            <input type="search" placeholder="Search articles...">
+                            <button type="submit"><i class="icon-search"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget categories-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li>
+                                <a href="#">
+                                    Cleaning Tips
+                                    <span class="post-count">12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Home Organization
+                                    <span class="post-count">8</span>
+                                </a>
+                            </li>
+                            <!-- More categories... -->
+                        </ul>
+                    </div>
+
+                    <!-- Popular Posts Widget -->
+                    <div class="sidebar-widget popular-posts">
+                        <h3>Popular Posts</h3>
+                        <div class="popular-post-list">
+                            <!-- Popular post items... -->
+                        </div>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget tags-widget">
+                        <h3>Popular Tags</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">Cleaning</a>
+                            <a href="#" class="tag">Organization</a>
+                            <a href="#" class="tag">Tips</a>
+                            <!-- More tags... -->
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Company Info Column -->
+            <div class="footer-column company-info">
+                <img src="images/logo-white.svg" alt="SparkleClean Pro" class="footer-logo">
+                <p class="company-desc">Professional cleaning services delivering exceptional results with eco-friendly solutions. Trusted by homeowners and businesses since 2010.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                </div>
+                <div class="certifications">
+                    <img src="cert1.png" alt="Green Certified">
+                    <img src="cert2.png" alt="Professional Association">
+                    <img src="cert3.png" alt="BBB Accredited">
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div class="footer-column newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for cleaning tips and exclusive offers!</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="gdpr-consent" required>
+                        <label for="gdpr-consent">
+                            I agree to receive marketing emails and accept the 
+                            <a href="privacy.html">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <div class="form-messages">
+                        <div class="success-message">
+                            <i class="icon-check"></i>
+                            <span>Thank you for subscribing!</span>
+                        </div>
+                        <div class="error-message">
+                            <i class="icon-alert"></i>
+                            <span>Oops! Something went wrong.</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="service-area">
+                    <h4>Service Area</h4>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=..."
+                            width="100%" 
+                            height="150" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    © 2024 SparkleClean Pro. All rights reserved.
+                </div>
+                <div class="bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sitemap.html">Site Map</a>
+                </div>
+                <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                    <i class="icon-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html> 
